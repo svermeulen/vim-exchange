@@ -136,7 +136,7 @@ function! s:create_map(mode, lhs, rhs)
 endfunction
 
 nnoremap <silent> <Plug>(Exchange) :<C-u>set opfunc=<SID>exchange_set<CR>g@
-vnoremap <silent> <Plug>(Exchange) :<C-u>call <SID>exchange_set(visualmode(), 1)<CR>
+xnoremap <silent> <Plug>(Exchange) :<C-u>call <SID>exchange_set(visualmode(), 1)<CR>
 nnoremap <silent> <Plug>(ExchangeClear) :<C-u>call <SID>exchange_clear()<CR>
 nnoremap <silent> <Plug>(ExchangeLine) :<C-u>set opfunc=<SID>exchange_set<CR>g@_
 
